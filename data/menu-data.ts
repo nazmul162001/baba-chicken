@@ -1,4 +1,4 @@
-import { Testimonial, GalleryItem } from "@/types/menu";
+import { GalleryItem, Testimonial } from "@/types/menu";
 
 export const menuItems: any = [
   {
@@ -44,7 +44,7 @@ export const menuItems: any = [
     price: "14.99$",
   },
   {
-    name: "Baba’s Butter Chicken",
+    name: "Baba's Butter Chicken",
     description:
       "A flaky, layered Indian flatbread made from whole wheat flour, rolled and cooked with ghee or butter.",
     price: "19.99$",
@@ -56,7 +56,7 @@ export const menuItems: any = [
     price: "19.99$",
   },
   {
-    name: "Baba’s Butter Paneer",
+    name: "Baba's Butter Paneer",
     description:
       "Crispy bite-sized pieces of fish are marinated in aromatic spices, dipped in a gram flour batter, and deep-fried to golden perfection.",
     price: "18.99$",
@@ -99,169 +99,278 @@ export const galleryItems: GalleryItem[] = [
 
 export const menu1 = [
   {
-    category: "Soups",
+    category: "Starters (Veg)",
     items: [
       {
-        name: "Lemon Coriander Soup",
-        description:
-          "A refreshing and tangy soup made with fresh lemon, coriander, and a blend of aromatic spices, perfect for a light appetizer.",
-        price: "6.99$",
+        name: "Paneer Tikka",
+        description: "Smoky, juicy, and kind of a big deal",
+        price: "16.99",
       },
       {
-        name: "Hot & Sour (Veg./Non-Veg.)",
-        description:
-          "A spicy and tangy soup that combines vegetables (or meat) with a flavorful broth, offering a perfect balance of hot and sour taste.",
-        price: "6.99$",
+        name: "Paneer Angaara Tikka (Hot)",
+        description: "Spicy, smoky, and seriously hot!",
+        price: "16.99",
       },
-      {
-        name: "Manchow (Veg./Non-Veg.)",
-        description:
-          "A flavorful and hearty soup, rich with mixed vegetables (or meat) and a crunchy texture, seasoned with spices to create a bold and savory taste.",
-        price: "6.99$",
-      },
-    ],
-  },
-  {
-    category: "Salads",
-    items: [
-      {
-        name: "Cream Salad",
-        description:
-          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
-        price: "5.99$",
-      },
-      {
-        name: "Green Salad",
-        description:
-          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
-        price: "4.99$",
-      },
-      // {
-      //   name: "Peanut and Channa Masala",
-      //   description:
-      //     "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
-      //   price: "7.99$",
-      // },
-    ],
-  },
-  {
-    category: "Starters (Veg.)",
-    items: [
       {
         name: "Spinach Corn Roll",
-        description:
-          "A crispy, golden-fried roll stuffed with a delicious blend of spinach, sweet corn, and creamy spices, served with a tangy dip.",
-        price: "15.99$",
+        description: "Crispy rolls stuffed with spinach and sweet corn",
+        price: "15.99",
       },
       {
-        name: "Tandoori Stuffed Aloo",
-        description:
-          "Flavorful potatoes stuffed with a spiced mixture, marinated in tandoori spices, and grilled to perfection in a clay oven.",
-        price: "15.99$",
+        name: "Haryali Paneer Tikka",
+        description: "Green goodness meets paneer perfection",
+        price: "16.99",
       },
       {
         name: "Paneer Belle",
-        description:
-          "Soft paneer cubes marinated in a rich and aromatic sauce, grilled for a smoky flavor and a deliciously tender bite.",
-        price: "17.99$",
+        description: "Soft, creamy, and absolutely irresistible",
+        price: "17.99",
       },
       {
         name: "Afghani Paneer Tikka",
-        description:
-          "Creamy and mildly spiced paneer tikka, infused with rich Afghani flavors, slow-cooked in a tandoor for a soft and juicy texture.",
-        price: "16.99$",
+        description: "Creamy, mild, and oh-so-delicious",
+        price: "16.99",
       },
       {
         name: "Mushroom Chilli",
-        description:
-          "A spicy and savory Indo-Chinese delight with crispy mushrooms tossed in a hot garlic sauce, chilies, and bell peppers.",
-        price: "15.99$",
+        description: "Spicy mushrooms that pack a punch",
+        price: "15.99",
       },
       {
         name: "Paneer Chilli",
-        description:
-          "Soft paneer cubes stir-fried with onions, bell peppers, and a tangy chili sauce for a bold and zesty flavor.",
-        price: "16.99$",
+        description: "Paneer cubes in a fiery chili sauce",
+        price: "16.99",
+      },
+      {
+        name: "Paneer 65",
+        description: "Crispy, spicy, and totally addictive",
+        price: "16.99",
+      },
+      {
+        name: "Hara Bhara Kebab",
+        description: "Green kebabs that are good for you",
+        price: "15.99",
       },
       {
         name: "Double Decker Mushroom",
-        description:
-          "A unique layered mushroom dish, loaded with flavorful stuffing and grilled to perfection, offering a rich and smoky taste.",
-        price: "16.99$",
+        description: "Layered mushroom magic",
+        price: "16.99",
       },
       {
-        name: "French Fries",
-        description:
-          "Crispy, golden fries served in your choice of classic salted, spicy masala, or rich parmesan cheese topping.",
-        price: "6.99$",
+        name: "French Fries (Plain/Masala)",
+        description: "Crispy fries with Indian spices. Desi fries for a twist!",
+        price: "6.99",
+      },
+      {
+        name: "Honey Chilli Potato/Cauliflower",
+        description: "Sweet, spicy, and crispy perfection",
+        price: "12.99",
+      },
+      {
+        name: "Veg Pakora",
+        description: "Crispy vegetable fritters",
+        price: "9.99",
       },
       {
         name: "Veg Platter",
-        description:
-          "A grand assortment of the finest vegetarian starters, including tandoori delights, crispy rolls, and spicy bites, perfect for sharing.",
-        price: "23.99$",
+        description: "A grand assortment of vegetarian delights",
+        price: "23.99",
       },
     ],
   },
   {
-    category: "Starters (Non-Veg.)",
+    category: "Starters (Non Veg)",
     items: [
       {
-        name: "Tandoori Chicken",
-        price: "Half/Full 15.99$/22.99$",
+        name: "Tandoori Chicken Half",
+        description:
+          "Juicy chicken marinated in traditional spices and grilled to perfection. Half or full—it's always a winner!",
+        price: "16.99",
+      },
+      {
+        name: "Tandoori Chicken Full",
+        description:
+          "Juicy chicken marinated in traditional spices and grilled to perfection. Half or full—it's always a winner!",
+        price: "24.99",
+      },
+      {
+        name: "Chicken Tikka",
+        description: "Tender chicken tikka, grilled to smoky perfection",
+        price: "17.99",
+      },
+      {
+        name: "Chicken Angaara Tikka (Hot)",
+        description: "Spicy, smoky, and seriously hot chicken!",
+        price: "17.99",
       },
       {
         name: "Reshmi Chicken",
-        price: "17.99$",
+        description: "Silky smooth chicken in a creamy marinade",
+        price: "17.99",
       },
       {
         name: "Afghani Chicken",
-        price: "17.99$",
+        description: "Creamy, mild, and oh-so-delicious chicken",
+        price: "17.99",
       },
       {
         name: "Chicken Belle",
-        price: "17.99$",
+        description: "Soft, creamy, and absolutely irresistible chicken",
+        price: "17.99",
       },
       {
         name: "Chicken Lasuni Tikka",
-        price: "17.99$",
+        description:
+          "Garlic-infused chicken tikka, bursting with flavor. Vampires beware!",
+        price: "17.99",
       },
       {
         name: "Chicken Malai Tikka",
-        price: "17.99$",
+        description: "Creamy, rich, and melt-in-your-mouth chicken",
+        price: "17.99",
       },
       {
         name: "Chicken Kali Mirch Tikka",
-        price: "17.99$",
+        description: "Peppery chicken tikka with a bold black pepper punch",
+        price: "17.99",
       },
       {
         name: "Tangri Chicken",
-        price: "17.99$",
+        description: "Drumstick perfection, grilled to smoky excellence",
+        price: "17.99",
       },
       {
-        name: "Lemon Chicken Dry",
-        price: "17.99$",
+        name: "Haryali Chicken Tikka",
+        description: "Green goodness meets chicken perfection",
+        price: "17.99",
       },
       {
-        name: "Non Veg Platter",
-        price: "26.99$",
+        name: "Chicken 65",
+        description: "Crispy, spicy, and totally addictive chicken",
+        price: "17.99",
+      },
+      {
+        name: "Lamb Chops",
+        description: "Tender lamb chops, grilled to perfection",
+        price: "28.99",
       },
     ],
   },
   {
-    category: "Kebabs",
+    category: "Baba's Chaap Corner",
+    items: [
+      {
+        name: "Choice of Tandoori Chaap",
+        description:
+          "Grilled, spiced, and proud to be soy -Angaara, Malai, Afghani, Kaali Mirch, Haryali",
+        price: "16.99",
+      },
+    ],
+  },
+  {
+    category: "Soups",
+    items: [
+      {
+        name: "Lemon Coriander Veg",
+        description: "Refreshing and tangy soup with fresh herbs",
+        price: "6.99",
+      },
+      {
+        name: "Hot & Sour (Veg/Non-Veg)",
+        description: "Spicy and tangy soup that hits all the right notes",
+        price: "6.99",
+      },
+      {
+        name: "Manchow (Veg/Non-Veg)",
+        description: "Hearty soup with a crunchy texture and bold flavors",
+        price: "6.99",
+      },
+      {
+        name: "Tomato Soup",
+        description: "Classic tomato soup, smooth and comforting",
+        price: "6.99",
+      },
+      {
+        name: "Sweet Corn Soup",
+        description: "Creamy sweet corn soup, sweet and satisfying",
+        price: "6.99",
+      },
+      {
+        name: "Chicken Soup",
+        description: "Hearty chicken soup, perfect for cold days",
+        price: "6.99",
+      },
+    ],
+  },
+  {
+    category: "Kebab",
     items: [
       {
         name: "Mutton Seekh Kebab",
         description:
-          "Juicy and flavorful minced mutton, seasoned with aromatic spices, skewered, and grilled to perfection for a smoky and succulent taste.",
-        price: "17.99$",
+          "Spiced mutton, grilled to smoky perfection. One bite and you're hooked!",
+        price: "17.99",
       },
       {
         name: "Chicken Seekh Kebab",
+        description: "Tender chicken seekh kebab, spiced to perfection",
+        price: "16.99",
+      },
+      {
+        name: "Veg Seekh Kebab",
+        description: "Vegetarian seekh kebab, packed with flavor",
+        price: "15.99",
+      },
+      {
+        name: "Fish Seekh Kebab",
+        description: "Fresh fish seekh kebab, light and flavorful",
+        price: "17.99",
+      },
+    ],
+  },
+  {
+    category: "Chin-Dian (Indian Style Chinese)",
+    items: [
+      {
+        name: "Hakka Noodles Veg",
+        description: "The Tangled mess you actually love",
+        price: "12.99",
+      },
+      {
+        name: "Veg Manchurian",
         description:
-          "Tender minced chicken blended with a rich mix of herbs and spices, skewered, and char-grilled for a deliciously smoky flavour.",
-        price: "16.99$",
+          "Crispy Outside, Saucy Inside - Just like your mood swings",
+        price: "14.99",
+      },
+      {
+        name: "Chilli Paneer",
+        description: "Spicy paneer in a tangy chili sauce",
+        price: "15.99",
+      },
+      {
+        name: "Chilli Chicken",
+        description: "Spicy chicken in a tangy chili sauce",
+        price: "16.99",
+      },
+      {
+        name: "Fried Rice Veg",
+        description: "Classic fried rice with vegetables",
+        price: "12.99",
+      },
+      {
+        name: "Fried Rice Chicken",
+        description: "Fried rice with tender chicken pieces",
+        price: "14.99",
+      },
+      {
+        name: "Noodles Chicken",
+        description: "Stir-fried noodles with chicken",
+        price: "14.99",
+      },
+      {
+        name: "Gobi Manchurian",
+        description: "Crispy cauliflower in a spicy sauce",
+        price: "13.99",
       },
     ],
   },
@@ -269,46 +378,343 @@ export const menu1 = [
     category: "Fish",
     items: [
       {
-        name: "Fish Fry with Tartar Sauce",
-        description:
-          "Crispy, golden-fried fish fillets served with a tangy and creamy tartar sauce, making for a perfect appetizer.",
-        price: "17.99$",
+        name: "Fish Tikka",
+        description: "A little smoky, a little spicy, a lot delicious.",
+        price: "17.99",
       },
       {
-        name: "Afghani Fish Tikka",
+        name: "Fish Fry with Tarter Sauce",
         description:
-          "Succulent fish marinated in a rich, creamy Afghani-style yogurt-based sauce, slow-cooked in a tandoor for a melt-in-the-mouth experience.",
-        price: "17.99$",
-      },
-      {
-        name: "Fish Belle",
-        description:
-          "Tender fish fillets grilled with a special blend of spices, offering a smoky and flavorful bite.",
-        price: "17.99$",
-      },
-      {
-        name: "Tandoori Fish",
-        description:
-          "Fresh fish marinated in yogurt and aromatic tandoori spices, char-grilled to perfection for a smoky and juicy flavor.",
-        price: "17.99$",
-      },
-      {
-        name: "Fish Kali Mirch",
-        description:
-          "A bold and aromatic dish featuring fish cooked in a peppery black pepper gravy, delivering a rich and slightly spicy taste.",
-        price: "17.99$",
-      },
-      {
-        name: "Chilli Fish",
-        description:
-          "A spicy Indo-Chinese delight with crispy fish tossed in a flavorful chili garlic sauce, bell peppers, and onions.",
-        price: "17.99$",
+          "Crispy, golden fish fried to perfection and served with tangy tartar sauce. Fry-day just got better!",
+        price: "17.99",
       },
       {
         name: "Fish Pakora",
+        description: "Crispy fish fritters, perfect with chutney",
+        price: "14.99",
+      },
+      {
+        name: "Fish Kali Mirch",
+        description: "Fish in a peppery black pepper sauce",
+        price: "17.99",
+      },
+      {
+        name: "Fish Belle",
+        description: "Fish in a creamy, rich sauce",
+        price: "17.99",
+      },
+      {
+        name: "Tandoori Fish",
+        description: "Fish marinated in tandoori spices and grilled",
+        price: "17.99",
+      },
+      {
+        name: "Chilli Fish",
+        description: "Spicy fish in a tangy chili sauce",
+        price: "17.99",
+      },
+      {
+        name: "Afghani Fish Tikka",
+        description: "Creamy Afghani-style fish tikka",
+        price: "17.99",
+      },
+      {
+        name: "Fish Curry",
+        description: "Traditional fish curry with spices",
+        price: "17.99",
+      },
+    ],
+  },
+  {
+    category: "Main Course (Veg)",
+    items: [
+      {
+        name: "Lemon Paneer",
         description:
-          "Crunchy and deep-fried fish fritters coated in a spiced chickpea batter, served with mint chutney.",
-        price: "14.99$",
+          "Zesty lemon and tangy spices pair with soft paneer for a refreshing twist.",
+        price: "18.99",
+      },
+      {
+        name: "Cream Paneer",
+        description:
+          "Paneer in a luscious cream sauce, rich and smooth with a hint of spice. Pure indulgence!",
+        price: "18.99",
+      },
+      {
+        name: "Kali Mirch Paneer",
+        description:
+          "Paneer in a spicy black pepper sauce. Bold, peppery, and packed with flavor!",
+        price: "18.99",
+      },
+      {
+        name: "Malai Kofta",
+        description:
+          "Soft, melt-in-your-mouth koftas in a rich, creamy gravy. Comfort food, redefined!",
+        price: "17.99",
+      },
+      {
+        name: "Lemon Mushroom",
+        description:
+          "Mushrooms tossed in tangy lemon and spices. Light, refreshing, and totally irresistible!",
+        price: "16.99",
+      },
+      {
+        name: "Kadahi Paneer",
+        description:
+          "Paneer cooked with fresh peppers and onions in a spicy, aromatic gravy. A classic from the kadahi!",
+        price: "17.99",
+      },
+      {
+        name: "Dal Makhani",
+        description:
+          "Rich, creamy dal slow-cooked with a blend of spices. The ultimate comfort in every spoon!",
+        price: "16.99",
+      },
+      {
+        name: "Palak Paneer",
+        description:
+          "Paneer in a velvety spinach gravy. Healthy, hearty, and oh-so-delicious!",
+        price: "16.99",
+      },
+      {
+        name: "Mixed Veg",
+        description: "All your veggie favorites in one happy reunion.",
+        price: "15.99",
+      },
+      {
+        name: "Vegetable Korma",
+        description: "Peas, potatoes, carrots—bathed in a nutty, spiced dream.",
+        price: "15.99",
+      },
+      {
+        name: "Baba's Channa Masala",
+        description: "Protein-packed, spice-stacked, flavor-forward.",
+        price: "15.99",
+      },
+      {
+        name: "Yellow Dal Tadka",
+        description: "Golden lentils, garlic crackle, and a homely feeling.",
+        price: "15.99",
+      },
+      {
+        name: "Paneer lababdaar",
+        description:
+          "Mildly sweet, deeply spiced, and unapologetically indulgent.",
+        price: "17.99",
+      },
+      {
+        name: "Chaap Tikka Masala",
+        description:
+          "Soy chaap grilled, spiced, and swimming in creamy masala gravy.",
+        price: "17.99",
+      },
+      {
+        name: "Extra Gravy",
+        description: "",
+        price: "5.00",
+      },
+    ],
+  },
+  {
+    category: "Baba's Chicken Specialities",
+    items: [
+      {
+        name: "BABA's Butter Chicken",
+        description:
+          "Juicy chicken in a creamy, buttery sauce. A royal indulgence, BABA style!",
+        price: "19.99",
+      },
+      {
+        name: "Lemon Chicken",
+        description:
+          "Tangy lemon and spices coat tender chicken. Zesty, fresh, and unforgettable!",
+        price: "19.99",
+      },
+      {
+        name: "Cream Chicken",
+        description:
+          "Rich and smooth cream sauce enveloping tender chicken. Comfort in every bite!",
+        price: "19.99",
+      },
+      {
+        name: "Kali Mirch Chicken",
+        description:
+          "Peppery, spicy chicken with a bold black pepper punch. For the spice lovers!",
+        price: "19.99",
+      },
+      {
+        name: "Keema Chicken",
+        description:
+          "Minced chicken cooked with aromatic spices. A hearty and flavorful classic!",
+        price: "18.99",
+      },
+      {
+        name: "Palak Chicken",
+        description:
+          "Chicken cooked in a smooth, flavorful spinach gravy. Nutritious and delicious!",
+        price: "18.99",
+      },
+      {
+        name: "Rarha Chicken",
+        description:
+          "Chicken simmered in a smoky, spicy gravy. A true North Indian delight!",
+        price: "18.99",
+      },
+      {
+        name: "Kadhai Chicken",
+        description:
+          "Stir-fried chicken with peppers, onions, and aromatic spices in a traditional kadhai. Full of flavor and heat!",
+        price: "18.99",
+      },
+      {
+        name: "Chilli Chicken",
+        description:
+          "Crispy chicken in a spicy Indo-Chinese sauce. Hot, tangy, and completely addictive!",
+        price: "18.50",
+      },
+      {
+        name: "Homestyle Chicken Curry",
+        description: "Curry that tastes like a warm hug from home.",
+        price: "17.99",
+      },
+      {
+        name: "Tawa Chicken",
+        description: "Pan-seared perfection with a spicy backstory.",
+        price: "18.99",
+      },
+      {
+        name: "Chicken Lababdar",
+        description:
+          "Mildly sweet, deeply spiced, and unapologetically indulgent.",
+        price: "18.99",
+      },
+      {
+        name: "Extra Gravy",
+        description: "",
+        price: "5.00",
+      },
+    ],
+  },
+  {
+    category: "Mutton Specialities",
+    items: [
+      {
+        name: "Baba's Special Mutton",
+        description:
+          "Tender mutton slow-cooked in BABA's secret spice blend. A rich, aromatic masterpiece!",
+        price: "19.99",
+      },
+      {
+        name: "Rogan Josh",
+        description:
+          "Mutton cooked in a fragrant, spicy gravy with Kashmiri influences. A royal dish with deep, rich flavors!",
+        price: "19.99",
+      },
+      {
+        name: "Palak Mutton",
+        description:
+          "Mutton simmered in a smooth, spiced spinach gravy. Healthy, hearty, and packed with flavor!",
+        price: "18.99",
+      },
+      {
+        name: "Rarha Meat",
+        description:
+          "Mutton simmered in a tangy, spicy gravy with a smoky finish. A true taste of Punjab!",
+        price: "19.99",
+      },
+      {
+        name: "Tawa Mutton",
+        description: "Pan-seared perfection with a spicy backstory.",
+        price: "18.99",
+      },
+    ],
+  },
+  {
+    category: "Fish Curries",
+    items: [
+      {
+        name: "Baba's Butter Fish",
+        description:
+          "Delicate fish cooked in a rich, creamy butter sauce. A buttery bite of heaven, BABA style!",
+        price: "19.99",
+      },
+      {
+        name: "Lemon Fish",
+        description:
+          "Fish coated in a tangy lemon marinade with a zesty kick. Fresh, light, and full of flavor!",
+        price: "19.99",
+      },
+    ],
+  },
+  {
+    category: "Breads",
+    items: [
+      {
+        name: "Tandoori Roti",
+        description:
+          "Crispy, tandoor-baked roti. Simple, classic, and perfect with any curry!",
+        price: "1.99",
+      },
+      {
+        name: "Plain Naan",
+        description:
+          "Soft, fluffy naan. Just the right sidekick for your meal!",
+        price: "3.50",
+      },
+      {
+        name: "Butter Naan",
+        description:
+          "Naan loaded with butter. Because butter makes everything better!",
+        price: "3.50",
+      },
+      {
+        name: "Garlic Naan",
+        description:
+          "Garlic-packed naan. Perfect for garlic lovers and vampire chasers!",
+        price: "4.50",
+      },
+      {
+        name: "Lachha Parantha",
+        description: "Flaky, buttery layers. The crispy, cozy carb you crave!",
+        price: "4.50",
+      },
+      {
+        name: "Green Chilli Parantha",
+        description: "Spicy, layered parantha for those who like it hot!",
+        price: "4.50",
+      },
+      {
+        name: "Red Mirchi Parantha",
+        description: "Flaky, fiery parantha. Spice lovers, this one's for you!",
+        price: "4.50",
+      },
+      {
+        name: "Bullet Chilli Naan",
+        description: "A soft naan with serious firepower. Spicy at it comes.",
+        price: "4.99",
+      },
+    ],
+  },
+  {
+    category: "Stuffed Naan",
+    items: [
+      {
+        name: "Paneer Naan with Gravy",
+        description:
+          "Fluffy naan stuffed with paneer, served with a gravy so good, it'll make you want to dive in headfirst!",
+        price: "12.99",
+      },
+      {
+        name: "Chicken Naan with Gravy",
+        description:
+          "Chicken wrapped in naan, with gravy so tasty, you'll wonder if it's a side dish or the main event!",
+        price: "13.99",
+      },
+      {
+        name: "Keema Naan with Gravy",
+        description:
+          "Minced meat in a naan, dripping with gravy. Warning: you might need a nap after this one!",
+        price: "14.99",
       },
     ],
   },
@@ -318,276 +724,32 @@ export const menu1 = [
       {
         name: "Chicken Kathi Roll",
         description:
-          "Succulent, spiced chicken pieces wrapped in a soft, flaky paratha, layered with tangy sauces and fresh veggies for a delicious handheld meal.",
-        price: "13.99$",
-      },
-      {
-        name: "Paneer Tikka Roll",
-        description:
-          "Smoky and marinated paneer tikka, grilled to perfection and wrapped in a soft paratha with fresh veggies and a creamy dressing.",
-        price: "12.99$",
+          "Juicy chicken wrapped in a soft paratha, with tangy chutneys and fresh veggies. A roll that rocks!",
+        price: "13.99",
       },
       {
         name: "Chilli Chicken Roll",
         description:
-          "A fiery and flavorful roll featuring spicy chilli chicken stir-fried with onions and bell peppers, wrapped in a warm paratha.",
-        price: "13.99$",
-      },
-    ],
-  },
-  {
-    category: "Main Course (Veg.)",
-    items: [
-      {
-        name: "BABA's Butter Paneer",
-        description:
-          "A rich and creamy butter-based paneer curry, cooked in a luscious tomato gravy with aromatic spices, offering a melt-in-your-mouth experience.",
-        price: "18.99$",
+          "Spicy chilli chicken wrapped in a warm paratha, perfect for a fiery feast on the go.",
+        price: "13.99",
       },
       {
-        name: "Lemon Paneer",
+        name: "Chicken Seekh Kathi Roll",
         description:
-          "A zesty and refreshing dish featuring soft paneer cubes tossed in a tangy lemon-infused gravy, perfectly balanced with mild spices.",
-        price: "18.99$",
+          "Charred kebab, cool chutney, wrapped in buttery layers—no cutlery needed.",
+        price: "15.99",
       },
       {
-        name: "Cream Paneer",
+        name: "Mutton Seekh Kathi Roll",
         description:
-          "A velvety smooth paneer curry cooked in a mildly spiced creamy sauce, offering a delicate and indulgent flavour.",
-        price: "18.99$",
+          "Tender mutton seekh, fresh herbs, and sauces that know what they're doing.",
+        price: "15.99",
       },
       {
-        name: "Kali Mirch Paneer",
+        name: "Paneer Tikka Roll",
         description:
-          "A bold and aromatic dish where paneer is cooked in a peppery black pepper gravy, delivering a rich and slightly spicy taste.",
-        price: "18.99$",
-      },
-      {
-        name: "Kadahi Paneer",
-        description:
-          "A classic North Indian dish featuring paneer stir-fried with bell peppers, onions, and tomatoes in a flavourful kadai masala.",
-        price: "17.99$",
-      },
-      {
-        name: "Palak Paneer",
-        description:
-          "A nutritious and delicious dish made with paneer cubes simmered in a smooth and mildly spiced spinach gravy.",
-        price: "17.99$",
-      },
-      {
-        name: "Malai Kofta",
-        description:
-          "Soft and creamy cottage cheese and potato dumplings cooked in a luxurious cashew and cream-based gravy, offering a royal indulgence.",
-        price: "17.99$",
-      },
-      {
-        name: "Dal Makhani",
-        description:
-          "A slow-cooked, rich, and creamy black lentil curry, infused with butter and aromatic spices for an authentic taste.",
-        price: "16.99$",
-      },
-      {
-        name: "Lemon Mushroom",
-        description:
-          "A tangy and flavourful mushroom dish, stir-fried with zesty lemon and spices for a refreshing twist.",
-        price: "16.99$",
-      },
-      {
-        name: "Extra Gravy",
-        description:
-          "A side of our rich, flavourful gravy, perfect for adding extra indulgence to your favourite dishes.",
-        price: "5.00$",
-      },
-    ],
-  },
-
-  {
-    category: "Main Course (Non-Veg.)",
-    items: [
-      {
-        name: "BABA's Butter Chicken",
-        description:
-          "A rich and creamy butter-based chicken curry, cooked in a luscious tomato gravy with aromatic spices, offering a melt-in-your-mouth experience.",
-        price: "19.99$",
-      },
-      {
-        name: "Lemon Chicken",
-        description:
-          "A zesty and refreshing dish featuring chicken tossed in a tangy lemon-infused gravy, perfectly balanced with mild spices.",
-        price: "19.99$",
-      },
-      {
-        name: "Cream Chicken",
-        description:
-          "A velvety smooth chicken curry cooked in a mildly spiced creamy sauce, offering a delicate and indulgent flavour.",
-        price: "19.99$",
-      },
-      {
-        name: "Kali Mirch Chicken",
-        description:
-          "A bold and aromatic dish where chicken is cooked in a peppery black pepper gravy, delivering a rich and slightly spicy taste.",
-        price: "19.99$",
-      },
-      {
-        name: "Keema Chicken",
-        description:
-          "A hearty and flavorful minced chicken curry, slow-cooked with spices, onions, and tomatoes, perfect with naan or rice.",
-        price: "18.50$",
-      },
-      {
-        name: "Palak Chicken",
-        description:
-          "A nutritious and flavorful curry with tender chicken pieces simmered in a smooth spinach-based gravy, offering a healthy yet delicious taste.",
-        price: "18.50$",
-      },
-      {
-        name: "Masala Chicken",
-        description:
-          "A classic North Indian-style chicken curry cooked with a rich blend of spices, tomatoes, and onions, offering a bold and flavorful experience.",
-        price: "18.50$",
-      },
-      {
-        name: "Rarha Chicken",
-        description:
-          "A unique and delicious combination of minced and boneless chicken cooked together in a spicy, thick masala gravy.",
-        price: "18.50$",
-      },
-      {
-        name: "Kadhai Chicken",
-        description:
-          "A spicy and aromatic chicken dish stir-fried with bell peppers, onions, and tomatoes in a traditional kadai-style masala.",
-        price: "18.99$",
-      },
-      {
-        name: "Chilli Chicken",
-        description:
-          "A popular Indo-Chinese dish featuring crispy chicken tossed in a spicy and tangy chilli garlic sauce with onions and bell peppers.",
-        price: "18.50$",
-      },
-    ],
-  },
-
-  {
-    category: "Mutton Specialities",
-    items: [
-      {
-        name: "Baba's Special Mutton",
-        description:
-          "A rich and aromatic mutton curry slow-cooked with a secret blend of spices, delivering deep flavors and a melt-in-the-mouth experience.",
-        price: "19.99$",
-      },
-      {
-        name: "Rogan Josh",
-        description:
-          "A classic Kashmiri delicacy featuring tender mutton simmered in a flavorful, slow-cooked tomato-based gravy infused with saffron.",
-        price: "18.99$",
-      },
-      {
-        name: "Palak Mutton",
-        description:
-          "A nutritious and hearty dish with succulent mutton pieces cooked in a smooth spinach-based gravy.",
-        price: "18.99$",
-      },
-      {
-        name: "Rarha Meat",
-        description:
-          "A unique combination of minced and bone-in mutton slow-cooked in a thick, spiced gravy, delivering bold flavors and a rich texture.",
-        price: "18.99$",
-      },
-    ],
-  },
-
-  {
-    category: "Stuffed Naan",
-    items: [
-      {
-        name: "Paneer Naan with Gravy",
-        description:
-          "Soft and fluffy naan stuffed with spiced paneer filling, served with a rich and flavorful gravy for the perfect accompaniment.",
-        price: "12.99$",
-      },
-      {
-        name: "Chicken Naan with Gravy",
-        description:
-          "A delicious stuffed naan filled with juicy, seasoned chicken, paired with a savoury gravy to enhance the taste.",
-        price: "13.99$",
-      },
-      {
-        name: "Keema Naan with Gravy",
-        description:
-          "A hearty naan stuffed with flavorful minced meat (keema), served with a delectable gravy for a satisfying meal.",
-        price: "14.99$",
-      },
-    ],
-  },
-
-  {
-    category: "Fish Curries",
-    items: [
-      {
-        name: "Baba's Butter Fish",
-        description:
-          "Tender fish fillets cooked in a rich, creamy butter-based gravy with aromatic spices, offering a smooth and indulgent taste.",
-        price: "19.99$",
-      },
-      {
-        name: "Lemon Fish",
-        description:
-          "A tangy and refreshing fish dish, where fish fillets are cooked in a zesty lemon-infused sauce, perfectly balanced with mild spices.",
-        price: "18.99$",
-      },
-      {
-        name: "Kali Mirch Fish",
-        description:
-          "A bold and spicy fish curry cooked with black pepper and other aromatic spices.",
-        price: "18.99$",
-      },
-    ],
-  },
-  {
-    category: "Indian Breads",
-    items: [
-      {
-        name: "Tandoori Roti",
-        description:
-          "Soft, slightly charred Indian flatbread baked in a tandoor, offering a smoky flavour and a perfect accompaniment to curries and gravies.",
-        price: "1.99$",
-      },
-      {
-        name: "Plain Naan",
-        description:
-          "Soft, fluffy, and lightly golden-brown naan, baked to perfection in a tandoor, ideal for scooping up flavourful curries.",
-        price: "3.50$",
-      },
-      {
-        name: "Butter Naan",
-        description:
-          "A rich and indulgent naan brushed with melted butter, offering a soft texture and a buttery flavour that pairs beautifully with any curry.",
-        price: "4.50$",
-      },
-      {
-        name: "Garlic Naan",
-        description:
-          "Fragrant naan topped with minced garlic and fresh herbs, creating a savoury and aromatic bread that complements spicy dishes.",
-        price: "4.50$",
-      },
-      {
-        name: "Lachha Parantha",
-        description:
-          "A flaky, multi-layered flatbread with a slightly crispy texture, perfect for pairing with gravies or dipping into yogurt-based side dishes.",
-        price: "4.50$",
-      },
-      {
-        name: "Green Chilli Parantha",
-        description:
-          "A spicy and flavourful whole-wheat flatbread, stuffed with chopped green chillies, offering a zesty heat in every bite.",
-        price: "4.50$",
-      },
-      {
-        name: "Lal Mirchi Parantha",
-        description:
-          "A spiced flatbread made with red chilli flakes and seasonings, offering a bold and spicy kick to your meal.",
-        price: "4.50$",
+          "Succulent paneer tikka rolled in a fluffy paratha, with crunchy veggies and zesty chutneys. A vegetarian delight!",
+        price: "12.99",
       },
     ],
   },
@@ -597,84 +759,239 @@ export const menu1 = [
       {
         name: "Plain Rice",
         description:
-          "Steamed, fluffy basmati rice, offering a simple and neutral side to pair with your favorite curries and gravies.",
-        price: "5.99$",
+          "Just rice... but it's so good, it might just steal the spotlight from your curry!",
+        price: "5.99",
       },
       {
         name: "Jeera Rice",
         description:
-          "Aromatic basmati rice cooked with cumin seeds and light spices, offering a fragrant and flavorful twist to the traditional plain rice.",
-        price: "6.99$",
+          "Aromatic rice with cumin seeds. Simple, fragrant, and oh-so-delicious!",
+        price: "6.99",
       },
       {
         name: "Veg Biryani",
         description:
-          "A rich and flavorful rice dish featuring basmati rice, a mix of vegetables, and aromatic spices, creating a hearty and satisfying meal.",
-        price: "14.99$",
+          "Fragrant rice with vegetables and spices. A vegetarian's dream come true!",
+        price: "14.99",
       },
       {
         name: "Chicken Biryani",
         description:
-          "Fragrant basmati rice layered with marinated chicken and a mix of spices, slow-cooked to perfection for a delicious and flavorful biryani.",
-        price: "16.99$",
+          "Chicken, rice, and spices. It's basically a hug in a bowl!",
+        price: "16.99",
+      },
+      {
+        name: "Mutton Biryani",
+        description:
+          "Tender mutton, fragrant rice, and aromatic spices. A royal feast!",
+        price: "17.99",
       },
     ],
   },
   {
-    category: "Beverages",
+    category: "Salads & Accompaniments",
     items: [
-      // {
-      //   name: "Baba's Special Masala Coke",
-      //   description:
-      //     "A refreshing twist on the classic Coke, infused with a blend of aromatic spices for a unique and flavorful beverage.",
-      //   price: "3.99$",
-      // },
       {
-        name: "Pop",
-        description:
-          "A selection of fizzy soft drinks, offering a refreshing and bubbly drink to complement your meal.",
-        price: "1.99$",
+        name: "Cream Salad",
+        description: "Creamy, refreshing salad with a hint of spice",
+        price: "4.99",
       },
       {
-        name: "Water",
-        description:
-          "Crisp and pure spring water, perfect for refreshing and hydrating with every meal.",
-        price: "2.49$",
+        name: "Green Salad",
+        description: "Fresh, crisp greens with a tangy dressing",
+        price: "3.99",
       },
-    ],
-  },
-  {
-    category: "Accompaniments",
-    items: [
+      {
+        name: "Papad (2pc)",
+        description: "Crispy papad, perfect with any meal",
+        price: "1.99",
+      },
       {
         name: "Raita",
-        description:
-          "A cool and creamy yogurt-based side dish, seasoned with spices and herbs, perfect for balancing the heat of your meal.",
-        price: "4.99$",
+        description: "Cool, creamy yogurt with spices and herbs",
+        price: "3.99",
       },
-      // {
-      //   name: "Papad (2 Pcs)",
-      //   description:
-      //     "Crispy and thin Indian papads, lightly fried and served as a crunchy side or appetizer.",
-      //   price: "2.99$",
-      // },
+      {
+        name: "Chicken Tikka Salad/Paneer Tikka Salad",
+        description: "Fresh salad with your choice of protein",
+        price: "8.99",
+      },
     ],
   },
-
   {
     category: "Desserts",
     items: [
       {
         name: "Gulab Jamun (2 Pcs)",
         description:
-          "Soft and syrup-soaked golden dumplings made of milk solids, offering a sweet and rich dessert experience.",
-        price: "3.99$",
+          "Sweet, syrupy, and melt-in-your-mouth-magic - Dessert dreams do come true",
+        price: "4.99",
       },
       {
-        name: "Rasmalai (2 pcs)",
+        name: "Rasmalai",
         description:
-          "A creamy and aromatic Indian rice pudding made with milk, sugar, and cardamom, garnished with nuts for a sweet and indulgent finish.",
-        price: "4.99$",
+          "Creamy, soft, and oh-so-sweet. A dessert fit for royalty!",
+        price: "5.99",
+      },
+      {
+        name: "Ice Cream",
+        description: "Creamy ice cream to cool down your spicy meal",
+        price: "3.99",
+      },
+      {
+        name: "Kulfi",
+        description: "Traditional Indian ice cream, rich and creamy",
+        price: "4.99",
+      },
+    ],
+  },
+  {
+    category: "Baba's Lunch Bowls (11am - 3pm)",
+    items: [
+      {
+        name: "Tikka Protien Bowl",
+        description:
+          "Tikka chance on this bowl - Perfect blend of Health and Taste!",
+        price: "12.50",
+      },
+      {
+        name: "-Chicken",
+        description: "Add chicken to your tikka bowl",
+        price: "2.00",
+      },
+      {
+        name: "-Paneer",
+        description: "Add paneer to your tikka bowl",
+        price: "1.50",
+      },
+      {
+        name: "Homestyle Curry Bowl",
+        description: "Like a warm Hug - But with more taste and Curry",
+        price: "12.50",
+      },
+      {
+        name: "-Chicken",
+        description: "Add chicken to your curry bowl",
+        price: "2.00",
+      },
+      {
+        name: "-Paneer",
+        description: "Add paneer to your curry bowl",
+        price: "1.50",
+      },
+      {
+        name: "-Lamb",
+        description: "Add lamb to your curry bowl",
+        price: "2.50",
+      },
+      {
+        name: "The Veggie Bowl",
+        description:
+          "Soul food in a bowl - Takes you right back home to your Mom's kitchen",
+        price: "11.99",
+      },
+      {
+        name: "- Dal Makhni",
+        description: "Add dal makhni to your veggie bowl",
+        price: "1.50",
+      },
+      {
+        name: "- Yellow Dal",
+        description: "Add yellow dal to your veggie bowl",
+        price: "1.20",
+      },
+      {
+        name: "- Vegetable and Dal",
+        description: "Add vegetables and dal to your veggie bowl",
+        price: "1.50",
+      },
+    ],
+  },
+  {
+    category: "Weekend Specials",
+    items: [
+      {
+        name: "Cholle Bhature",
+        description:
+          "Fried Indian Bread served with Chickpea curry. Extra Bhatura $4.99",
+        price: "11.00",
+      },
+      {
+        name: "Amritsari Naan (Mix/Aloo)",
+        description:
+          "Flaky, buttery, and filled with Amritsar's finest secrets. Served with Chickpea curry and salad",
+        price: "13.00",
+      },
+      {
+        name: "Paneer",
+        description: "Weekend special paneer dish",
+        price: "1.00",
+      },
+    ],
+  },
+  {
+    category: "Kids Menu",
+    items: [
+      {
+        name: "Chicken Tenders & Fries",
+        description: "Golden, crunchy, and kid-approved.",
+        price: "11.99",
+      },
+      {
+        name: "Chicken Curry and Rice",
+        description: "A gentle curry adventure with no scary spice.",
+        price: "11.99",
+      },
+    ],
+  },
+  {
+    category: "Beverages",
+    items: [
+      {
+        name: "Baba's Special Masala Coke",
+        description:
+          "A refreshing twist on the classic Coke, infused with aromatic spices",
+        price: "4.99",
+      },
+      {
+        name: "Spring Water",
+        description: "Pure, refreshing spring water",
+        price: "2.49",
+      },
+      {
+        name: "Pop",
+        description: "Refreshing soft drinks",
+        price: "2.99",
+      },
+      {
+        name: "Thumbs Up/Limca",
+        description: "Popular Indian soft drinks",
+        price: "2.99",
+      },
+      {
+        name: "Lassi (Sweet/Salted/Mango)",
+        description: "Traditional yogurt-based drink",
+        price: "5.99",
+      },
+      {
+        name: "Chai",
+        description: "Traditional Indian tea",
+        price: "4.99",
+      },
+      {
+        name: "Green tea/Black Tea",
+        description: "Refreshing tea options",
+        price: "4.99",
+      },
+      {
+        name: "Indian Hot Coffee",
+        description: "Traditional Indian coffee",
+        price: "5.99",
+      },
+      {
+        name: "Indian Style Cold Coffee (With ice Cream)",
+        description: "Creamy cold coffee with ice cream",
+        price: "6.99",
       },
     ],
   },
